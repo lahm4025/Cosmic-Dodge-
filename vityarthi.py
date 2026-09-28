@@ -55,9 +55,9 @@ def main():
                 break
 
         keys=pygame.key.get_pressed()
-        if keys[pygame.K_a] and player.x>0:
+        if keys[pygame.K_LEFT] and player.x>0:
             player.x-=player_velocity
-        if keys[pygame.K_d] and player.x<Width-player_width:
+        if keys[pygame.K_RIGHT] and player.x<Width-player_width:
             player.x+=player_velocity
 
         for star in stars[:]:
